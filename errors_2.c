@@ -7,7 +7,7 @@ int div_error(unsigned int line_number);
 int pchar_error(unsigned int line_number, char *message);
 
 /**
- * pop_error - Prints pop error messages for empty stacks.
+ * pop_error - Prints pop error message for empty stacks.
  * @line_number: Line number in script where error occured.
  *
  * Return: (EXIT_FAILURE) always.
@@ -20,7 +20,7 @@ int pop_error(unsigned int line_number)
 
 /**
  * pint_error - Prints pint error messages for empty stacks.
- * @line_number: Line number in Monty bytecodes file where error occurred.
+ * @line_number: Line number in monty bytecodes file where error occured.
  *
  * Return: (EXIT_FAILURE) always.
  */
@@ -33,8 +33,8 @@ int pint_error(unsigned int line_number)
 /**
  * short_stack_error - Prints monty math function error messages
  *                     for stacks/queues smaller than two nodes.
- * @line_number: Line number in Monty bytecodes file where error occurred.
- * @op: Operation where the error occurred.
+ * @line_number: Line number in monty bytecodes file where error occurred.
+ * @op: Operation where the error occured.
  *
  * Return: (EXIT_FAILURE) always.
  */
@@ -46,7 +46,7 @@ int short_stack_error(unsigned int line_number, char *op)
 
 /**
  * div_error - Prints division error messages for division by 0.
- * @line_number: Line number in Monty bytecodes file where error occurred.
+ * @line_number: Line number in monty bytecodes file where error occurred.
  *
  * Return: (EXIT_FAILURE) always.
  */
@@ -57,13 +57,14 @@ int div_error(unsigned int line_number)
 }
 
 /**
- * pchar_error - Prints pchar error messages for empty stacks
+ * pchar_error - Prints pchar error message for empty stacks
  *               empty stacks and non-character values.
- * @line_number: Line number in Monty bytecodes file where error occurred.
+ * @line_number: Line number in monty bytecodes file where error occurred.
  * @message: The corresponding error message to print.
  *
  * Return: (EXIT_FAILURE) always.
  */
+
 int pchar_error(unsigned int line_number, char *message)
 {
 	fprintf(stderr, "L%u: can't pchar, %s\n", line_number, message);

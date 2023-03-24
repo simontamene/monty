@@ -4,7 +4,7 @@ char *get_int(int num);
 unsigned int _abs(int);
 int get_numbase_len(unsigned int num, unsigned int base);
 void fill_numbase_buff(unsigned int num, unsigned int base,
-		       char *buff, int buff_size);
+		char *buff, int buff_size);
 
 /**
  * get_int - gets a character pointer to new string containing int
@@ -68,16 +68,16 @@ int get_numbase_len(unsigned int num, unsigned int base)
 }
 
 /**
- * fill_numbase_buff - fills buffer with correct numbers up to base 36
+ * fill_numbase_buff - fills buffer with correct number up to base 36
  * @num: number to convert to string given base
  * @base: base of number used in conversion, only works up to base 36
- * @buff: buffer to fill with result of conversion
+ * @buff: buffer to fill with result of coversion
  * @buff_size: size of buffer in bytes
  *
  * Return: always void.
  */
 void fill_numbase_buff(unsigned int num, unsigned int base,
-			char *buff, int buff_size)
+	char *buff, int buff_size)
 {
 	int rem, i = buff_size - 1;
 
